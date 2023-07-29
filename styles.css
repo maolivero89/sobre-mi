@@ -1,0 +1,26 @@
+html {
+    /* Estilo base en todo el css */
+    background-color: #352a2a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(176, 191, 204);
+      }
+
+h1 { 
+    /*Estilo del titulo principal*/
+    margin: 0;
+    padding: 25px 0;
+    font-size: 60px;
+    text-align: center;
+    color: #e4e3e3
+  }
+
+h2 {
+    /*Estilo de los titulos secundarios*/
+    font-size: 30px;
+    }
+
+ul {
+    /*Estilo de los elementos secundarios*/
+    font-size: 16px;
+}
+
