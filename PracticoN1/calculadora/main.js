@@ -12,10 +12,15 @@ function calcular() {
 let num1 = traerNumero("numero1");
 let num2 = traerNumero("numero2");
 let operacion = traerOperacion();
+
+if (isNaN(num1) || isNaN(num2)) {
+    alert("Error: Por favor, Ingrese valores numéricos válidos en todos los campos.");
+    return;
+ }
 switch (operacion) {
     case "suma":
         resultado=(num1 + num2);
-    break;
+        break;
 
     case "resta":
         resultado= (num1 - num2);
@@ -31,9 +36,16 @@ switch (operacion) {
 
     
     }
-    document.getElementById("resultado").innerHTML = "El resultado es: "+resultado;
+    document.getElementById("resultado").innerHTML = resultado;
 }
 
-function borrar() {
-    document.getElementById("").reset();
+function refrescar() {
+    document.getElementById("numero1").value = num1;
+    document.getElementById("numero2").value = num2;
   }
+
+  function borrar(){
+    num1 = 0;
+    num2 = 0;
+    refrescar();
+}

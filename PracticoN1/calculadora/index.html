@@ -16,13 +16,13 @@
         <div class="container">
 			<div class="calculadora">
 					<label for="number">Numero 1: </label>
-					<input type="number" id="numero1" placeholder="Ingresa un numero">
+					<input type="text" id="numero1" placeholder="Ingresa un numero">
 
 					<br><br>
 
 					<label for="number">Numero 2: </label>
-					<input type="number" id="numero2" placeholder="Ingrese otro numero">
-
+					<input type="text" id="numero2" placeholder="Ingrese otro numero">
+					
 					<br><br>
 
 					<label for="operaciones">Operacion: </label>
@@ -39,7 +39,9 @@
 						<button id="botonCalcular" onclick="calcular()">Calcular</button>
 						<button id="botonBorrar" onclick="borrar()">Borrar</button>
 					</div>
+					<br>
 
+					<label for="resultado">Resultado:</label>
 					<p id="resultado"></p>
 					
 			</div>
