@@ -30,3 +30,12 @@ html {
     font-style:inherit;
     color: rgb(18, 20, 20);
     }
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+    font-style: italic;
+    color: rgb(245, 239, 239);
+    text-shadow: 0 0 2px rgb(22, 21, 21);
+}
+

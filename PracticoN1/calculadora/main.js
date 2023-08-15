@@ -1,7 +1,6 @@
 function traerNumero(n1, n2) {
-    let num1 = document.getElementById("numero1").value;
-    let num2 = document.getElementById("numero2").value;
-        return parseInt(num1, num2);
+    const numero = document.getElementById(n1).value;
+        return parseInt(numero);
 }
 
 function traerOperacion() {
@@ -10,24 +9,24 @@ function traerOperacion() {
 }
 
 function calcular() {
-let numero1 = traerNumero("numero1");
-let numero2 = traerNumero("numero2");
+let num1 = traerNumero("numero1");
+let num2 = traerNumero("numero2");
 let operacion = traerOperacion();
 switch (operacion) {
     case "suma":
-        resultado=(numero1 + numero2);
+        resultado=(num1 + num2);
     break;
 
     case "resta":
-        resultado= (numero1 - numero2);
+        resultado= (num1 - num2);
     break;
 
     case "multiplicacion":
-        resultado= (numero1 * numero2);
+        resultado= (num1 * num2);
     break;
 
     case "division":
-        resultado = (numero1 / numero2);
+        resultado = (num1 / num2);
     break;
 
     
