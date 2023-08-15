@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Calculadora con JS</h1>
+        <div class="container">
+			<section class="calcuContainer">
+				<div class="calculadora">
+					<label for="number">Numero 1</label>
+					<input type="number" id="numero1" placeholder="Ingresa un numero">
+
+					<br><br>
+
+					<label for="number">Numero 2 </label>
+					<input type="number" id="numero2" placeholder="Ingrese otro numero">
+
+					<br><br>
+
+					<label for="operaciones">Operacion</label>
+					<select id="operaciones">
+						<option value="suma">suma</option>
+						<option value="resta">resta</option>
+						<option value="multiplicacion">multiplicacion</option>
+						<option value="division">division</option>
+					</select>
+
+					<br> <br>
+
+					<div class="calcularBorrar">
+						<button id="botonCalcular" onclick="calcular()">Calcular</button>
+						<button id="botonBorrar" onclick="borrar()">Borrar</button>
+					</div>
+
+					<p id="resultado"></p>
+					
+				</div>
+			</section>
+		</div>                            
+       
+    </main>
+    <footer></footer>    
+</body>
+
+</html>
