@@ -1,19 +1,19 @@
 function traerNumero(n1, n2) {
     const numero = document.getElementById(n1).value;
-        return parseInt(numero);
-}
+        return parseFloat(numero);
+} // Funcion que guarda las variables y las convierte en Floats //
 
 function traerOperacion() {
     let operacion = document.getElementById("operaciones").value;
     return operacion;
-}
+} //Funcion que guarda la funcion seleccionada//
 
-function calcular() {
+function calcular() { // Funcion con el fin de hacer los calculos entre los numeros ingresados y la operacion seleccionada //
 let num1 = traerNumero("numero1");
 let num2 = traerNumero("numero2");
 let operacion = traerOperacion();
 
-if (isNaN(num1) || isNaN(num2)) {
+if (isNaN(num1) || isNaN(num2)) { //Si ingresamos caracteres que no sean Numeros, salta este error//
     alert("Error: Por favor, Ingrese valores numéricos válidos en todos los campos.");
     return;
  }
@@ -31,7 +31,12 @@ switch (operacion) {
     break;
 
     case "division":
-        resultado = (num1 / num2);
+
+         if(num2 == 0); {
+            alert("Error: No es posible dividir por 0. Ingrese otro numero");            
+         }
+         resultado = (num1 / num2);
+               
     break;
 
     
@@ -42,10 +47,12 @@ switch (operacion) {
 function refrescar() {
     document.getElementById("numero1").value = num1;
     document.getElementById("numero2").value = num2;
-  }
+  } 
 
   function borrar(){
     num1 = 0;
     num2 = 0;
+    resultado = 0;
+    document.getElementById("resultado").innerHTML = resultado;
     refrescar();
-}
+} //Funcion para resetear la calculadora a 0 //
