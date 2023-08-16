@@ -31,15 +31,12 @@ switch (operacion) {
     break;
 
     case "division":
+        if(num2 != 0); {
+            resultado = num1 / num2; 
+         } 
+        window.alert("Error: No es posible dividir por 0. Ingrese otro numero")     
+    break;   
 
-         if(num2 == 0); {
-            alert("Error: No es posible dividir por 0. Ingrese otro numero");            
-         }
-         resultado = (num1 / num2);
-               
-    break;
-
-    
     }
     document.getElementById("resultado").innerHTML = resultado;
 }
