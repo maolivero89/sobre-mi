@@ -65,7 +65,7 @@ case "division":
 
 ```
 case "division":
-        if(num2 == 0)**;** {
+        if(num2 == 0); {
             window.alert("Error: No es posible dividir por 0. Ingrese otro numero");
          } else {
         resultado = (num1 / num2)}
@@ -91,12 +91,29 @@ function borrar(){
 function borrar(){
     num1 = null;
     num2 = null;
-    resultado = **null**;
+    resultado = null;
     document.getElementById("resultado").innerHTML = resultado;
     refrescar();
 }
 ```
+3- Si en el campo de texto agregamos numeros seguidos de letras, el programa no tira error, ignora las letras
+ 
+ <img src= https://github.com/maolivero89/sobre-mi/blob/main/PracticoN1/calculadora/ErrorLetras.jpg >
 
+**_Solucion_** : Cambiar type a number. Asi solo se pueden agregar numeros.
+
+```
+<label for="number">1er numero: </label>
+					<input type="number" id="numero1"  placeholder="Ingresa un numero">
+
+					<br><br>
+
+					<label for="number">2do numero: </label>
+					<input type="number" id="numero2" placeholder="Ingrese otro numero">
+					
+					<br><br>
+
+```
 
 
 
