@@ -28,13 +28,21 @@
 ### Casos de prueba:
 
 1- SUMA: 1ero numero ingresado : *100*, 2do numero ingresado *352*. Calculo obtenido **452**. El resultado es el esperado.
+
 2- RESTA: 1ero numero ingresado : *1545*, 2do numero ingresado *787*. Calculo obtenido **758**. El resultado es el esperado.
+
 3- RESTA: 1ero numero ingresado : *541*, 2do numero ingresado *984*. Calculo obtenido **-443**. El resultado es el esperado.
+
 4- MULTIPLICACION: 1ero numero ingresado : *198*, 2do numero ingresado *320*. Calculo obtenido **63360**. El resultado es el esperado.
+
 5- MULTIPLICACION: 1ero numero ingresado : *0.21*, 2do numero ingresado *3.52*. Calculo obtenido **0.7392**. El resultado es el esperado.
+
 6- SUMA: 1ero numero ingresado : *-32*, 2do numero ingresado *3.52*. Calculo obtenido **-28.48**. El resultado es el esperado.
+
 7- DIVISION: 1ero numero ingresado : *1400*, 2do numero ingresado *225*. Calculo obtenido **6.22222222**. El resultado es el esperado.
+
 8- DIVISION: 1ero numero ingresado : *254*, 2do numero ingresado *0*. La calculadora nos alerta lo siguiente: "Error: No es posible dividir por 0. Ingrese otro numero". El resultado es el esperado.
+
 9- DIVISION: 1ero numero ingresado : *0*, 2do numero ingresado *23455*. Calculo obtenido **0**. El resultado es el esperado.
 
 
