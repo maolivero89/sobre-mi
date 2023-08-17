@@ -39,7 +39,7 @@
 
 
 ### Problemas encontrados:
-
+```
 1- En Case: division: 
 
 case "division":
@@ -51,8 +51,11 @@ case "division":
 
     **Me toma siempre como verdadero el IF** y luego ejecuta el resultado de igual forma.
 
+```    
+
 **_SOLUCION_**: SACAR PUNTO Y COMA LUEGO DEL PARENTESIS DEL IF Y AHORA AGREGAR ELSE.
 
+```
 case "division":
         if(num2 == 0)**;** {
             window.alert("Error: No es posible dividir por 0. Ingrese otro numero");
@@ -60,10 +63,11 @@ case "division":
         resultado = (num1 / num2)}
     break; 
 
+```
 
 2- En la funcion borrar(), queda impreso en pantalla resultado = 0, cuando apretamos el boton borrar.
 
-
+```
 function borrar(){
     num1 = 0;
     num2 = 0;
@@ -71,9 +75,11 @@ function borrar(){
     document.getElementById("resultado").innerHTML = resultado;
     refrescar();
 }
+```
 
 **_SOLUCION_**: resultado = null; Esto quita el ultimo resultado impreso.
 
+```
 function borrar(){
     num1 = null;
     num2 = null;
@@ -81,6 +87,7 @@ function borrar(){
     document.getElementById("resultado").innerHTML = resultado;
     refrescar();
 }
+```
 
 
 
